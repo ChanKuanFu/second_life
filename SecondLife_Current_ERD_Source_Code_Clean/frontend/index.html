@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f6f5f0"><title>SecondLife — good finds, lived again</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">↗</span><span>second<span class="brand-light">life</span></span></a>
+    <button class="modules-trigger" id="modules-btn" title="Open project modules">☰ <span>Modules</span></button><div class="search-wrap"><span>⌕</span><input id="search" placeholder="Find something lovely..." aria-label="Search listings"><kbd>⌘ K</kbd></div>
+    <nav class="desktop-actions"><button class="icon-button" id="orders-btn" title="Orders">▤</button><button class="icon-button" id="saved-btn" title="Saved items">♡</button><button class="icon-button" id="cart-btn" title="Shopping bag">♧<i id="cart-count">0</i></button><button class="sell-button" id="sell-btn">＋ Sell an item</button><button class="avatar" id="account-btn">A</button></nav>
+    <button class="mobile-bag" id="mobile-cart" aria-label="Open cart">♧ <i id="mobile-cart-count">0</i></button>
+  </header>
+  <main>
+    <section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> PRE-LOVED, WELL-FOUND</div><h1>A good find<br>deserves <em>another life.</em></h1><p>Thoughtful second-hand pieces, passed on to someone who’ll love them next.</p><div class="hero-actions"><button class="primary" id="explore-btn">Explore the finds <span>↘</span></button><div class="social-proof"><div class="face-stack"><b>A</b><b>J</b><b>M</b></div><span><strong>2.4k+</strong> happy re-homers</span></div></div></div><div class="hero-art"><div class="art-sun"></div><div class="art-plant">✳</div><div class="art-note">little things,<br>loved again <span>✦</span></div><div class="art-stem"></div><div class="art-pot"></div><div class="art-label">LESS WASTE, MORE WONDER</div></div><div class="hero-index">01 <span>/</span> 04</div></section>
+    <section class="catalog" id="catalog"><div class="section-heading"><div><div class="eyebrow">THE COMMUNITY MARKET</div><h2>Find your <em>next favourite.</em></h2></div><button class="text-link" id="sell-link">Have something to pass on? <b>Start selling ↗</b></button></div>
+      <div class="catalog-toolbar"><div class="chips" id="category-chips"><button class="chip active" data-category="">Everything <small>↗</small></button></div><div class="sort-label"><span id="result-count">Showing finds</span><select id="sort"><option value="new">Recently added</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div></div>
+      <div class="product-grid" id="products"><div class="loading-card">Finding good things...</div></div><div class="empty-state hidden" id="empty">No finds match that search yet. Try another word.</div>
+    </section>
+    <section class="trust-strip"><div><b>✳</b><span><strong>Good things, checked.</strong><small>Every listing comes from our community.</small></span></div><div><b>↗</b><span><strong>Meet your neighbours.</strong><small>Buy local, pass it forward.</small></span></div><div><b>♡</b><span><strong>A little kinder.</strong><small>One less thing goes to waste.</small></span></div></section>
+  </main>
+  <footer><a class="brand" href="/"><span class="brand-mark">↗</span><span>second<span class="brand-light">life</span></span></a><span>Good things find good people.</span><span>© 2026 SecondLife</span></footer>
+  <div class="toast" id="toast"></div>
+  <div class="modal-backdrop hidden" id="modal"><section class="modal" id="modal-content"></section></div>
+  <script src="/app.js"></script>
+</body></html>
